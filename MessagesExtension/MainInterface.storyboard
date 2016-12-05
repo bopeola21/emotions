@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Messages View Controller-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController id="ObA-dk-sSI" customClass="MessagesViewController" customModule="MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qkL-Od-lgU"/>
+                        <viewControllerLayoutGuide type="bottom" id="n38-gi-rB5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sWO-di-Vzu">
+                                <rect key="frame" x="0.0" y="20" width="160" height="508"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ef2-m2-tcB">
+                                <rect key="frame" x="160" y="20" width="160" height="508"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tkv-Xn-MIM">
+                                        <rect key="frame" x="57" y="422" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="pictureTaken:" destination="ObA-dk-sSI" eventType="touchUpInside" id="MCk-m9-1ok"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Tkv-Xn-MIM" firstAttribute="leading" secondItem="ef2-m2-tcB" secondAttribute="leading" constant="57" id="5rF-je-UYh"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tkv-Xn-MIM" secondAttribute="trailing" constant="57" id="dOh-TR-PlY"/>
+                                    <constraint firstAttribute="bottom" secondItem="Tkv-Xn-MIM" secondAttribute="bottom" constant="56" id="n61-JZ-W3t"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ef2-m2-tcB" firstAttribute="top" secondItem="qkL-Od-lgU" secondAttribute="bottom" id="Blw-pN-KDd"/>
+                            <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="ef2-m2-tcB" secondAttribute="bottom" id="BzX-Ly-mHh"/>
+                            <constraint firstItem="ef2-m2-tcB" firstAttribute="leading" secondItem="sWO-di-Vzu" secondAttribute="trailing" id="QZW-u3-omO"/>
+                            <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="sWO-di-Vzu" secondAttribute="bottom" id="YoQ-f1-511"/>
+                            <constraint firstItem="sWO-di-Vzu" firstAttribute="trailing" secondItem="zMn-AG-sqS" secondAttribute="trailing" multiplier="0.5" id="log-SB-dXw"/>
+                            <constraint firstItem="sWO-di-Vzu" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" id="mNJ-dX-TUL"/>
+                            <constraint firstItem="sWO-di-Vzu" firstAttribute="top" secondItem="qkL-Od-lgU" secondAttribute="bottom" id="qZZ-aX-yH1"/>
+                            <constraint firstAttribute="trailing" secondItem="ef2-m2-tcB" secondAttribute="trailing" id="ztV-Iq-RdD"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="528"/>
+                    <connections>
+                        <outlet property="mainImageView" destination="sWO-di-Vzu" id="AqS-97-Jpq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33.600000000000001" y="61.169415292353825"/>
+        </scene>
+    </scenes>
+</document>
