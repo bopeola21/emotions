@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4370E668C0A0D0B3B9E1CE46 /* Pods_Emotions_MessagesExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1186D729984D515350145972 /* Pods_Emotions_MessagesExtension.framework */; };
+		6D60E5A2823D190335D16ED7 /* Pods_Emotions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96263CCAA1CB0A030AA93F1 /* Pods_Emotions.framework */; };
 		E67C0F351DE0367300C22C3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E67C0F341DE0367300C22C3C /* Assets.xcassets */; };
 		E67C0F3C1DE0367300C22C3C /* MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E67C0F3B1DE0367300C22C3C /* MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E67C0F411DE0367300C22C3C /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67C0F401DE0367300C22C3C /* Messages.framework */; };
 		E67C0F441DE0367300C22C3C /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C0F431DE0367300C22C3C /* MessagesViewController.swift */; };
-		E67C0F471DE0367300C22C3C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E67C0F451DE0367300C22C3C /* MainInterface.storyboard */; };
 		E67C0F491DE0367300C22C3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E67C0F481DE0367300C22C3C /* Assets.xcassets */; };
+		E67C0F551DE0368500C22C3C /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C0F541DE0368500C22C3C /* SwiftyJSON.swift */; };
+		E67C0F571DE036D300C22C3C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E67C0F561DE036D300C22C3C /* MainInterface.storyboard */; };
+		E67C0F591DE036F400C22C3C /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C0F581DE036F400C22C3C /* APIRequest.swift */; };
+		E67EBD601DE13F0800F612AB /* EmojiLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67EBD5F1DE13F0800F612AB /* EmojiLibrary.swift */; };
+		E67EBD621DE1439C00F612AB /* LibraryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67EBD611DE1439C00F612AB /* LibraryAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,15 +46,26 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1186D729984D515350145972 /* Pods_Emotions_MessagesExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emotions_MessagesExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2893E16A839045D6A2BEEF73 /* Pods-Emotions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emotions.release.xcconfig"; path = "Pods/Target Support Files/Pods-Emotions/Pods-Emotions.release.xcconfig"; sourceTree = "<group>"; };
+		2E15BBFBBD4B94BD7434D747 /* Pods-Emotions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emotions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Emotions/Pods-Emotions.debug.xcconfig"; sourceTree = "<group>"; };
+		79E12A7A7579252EEBE03DF4 /* Pods-Emotions-MessagesExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emotions-MessagesExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Emotions-MessagesExtension/Pods-Emotions-MessagesExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		C96263CCAA1CB0A030AA93F1 /* Pods_Emotions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emotions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFDB3E0C82C4DE06BB47C36C /* Pods-Emotions-MessagesExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emotions-MessagesExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Emotions-MessagesExtension/Pods-Emotions-MessagesExtension.release.xcconfig"; sourceTree = "<group>"; };
+		E663DAD71DE20A980007567A /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = "Pods/../build/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework"; sourceTree = "<group>"; };
 		E67C0F311DE0367300C22C3C /* Emotions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emotions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67C0F341DE0367300C22C3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E67C0F361DE0367300C22C3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E67C0F3B1DE0367300C22C3C /* MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessagesExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67C0F401DE0367300C22C3C /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
 		E67C0F431DE0367300C22C3C /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
-		E67C0F461DE0367300C22C3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		E67C0F481DE0367300C22C3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E67C0F4A1DE0367300C22C3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E67C0F541DE0368500C22C3C /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		E67C0F561DE036D300C22C3C /* MainInterface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		E67C0F581DE036F400C22C3C /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		E67EBD5F1DE13F0800F612AB /* EmojiLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiLibrary.swift; sourceTree = "<group>"; };
+		E67EBD611DE1439C00F612AB /* LibraryAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +74,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				E67C0F411DE0367300C22C3C /* Messages.framework in Frameworks */,
+				4370E668C0A0D0B3B9E1CE46 /* Pods_Emotions_MessagesExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F984B4019B106E791F0F8A8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D60E5A2823D190335D16ED7 /* Pods_Emotions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0511B330CFE2782C8F3A65ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E15BBFBBD4B94BD7434D747 /* Pods-Emotions.debug.xcconfig */,
+				2893E16A839045D6A2BEEF73 /* Pods-Emotions.release.xcconfig */,
+				79E12A7A7579252EEBE03DF4 /* Pods-Emotions-MessagesExtension.debug.xcconfig */,
+				CFDB3E0C82C4DE06BB47C36C /* Pods-Emotions-MessagesExtension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E67C0F2A1DE0367300C22C3C = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +107,7 @@
 				E67C0F421DE0367300C22C3C /* MessagesExtension */,
 				E67C0F3F1DE0367300C22C3C /* Frameworks */,
 				E67C0F321DE0367300C22C3C /* Products */,
+				0511B330CFE2782C8F3A65ED /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,7 +132,10 @@
 		E67C0F3F1DE0367300C22C3C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E663DAD71DE20A980007567A /* SVProgressHUD.framework */,
 				E67C0F401DE0367300C22C3C /* Messages.framework */,
+				C96263CCAA1CB0A030AA93F1 /* Pods_Emotions.framework */,
+				1186D729984D515350145972 /* Pods_Emotions_MessagesExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -102,8 +143,12 @@
 		E67C0F421DE0367300C22C3C /* MessagesExtension */ = {
 			isa = PBXGroup;
 			children = (
+				E67C0F541DE0368500C22C3C /* SwiftyJSON.swift */,
 				E67C0F431DE0367300C22C3C /* MessagesViewController.swift */,
-				E67C0F451DE0367300C22C3C /* MainInterface.storyboard */,
+				E67C0F561DE036D300C22C3C /* MainInterface.storyboard */,
+				E67C0F581DE036F400C22C3C /* APIRequest.swift */,
+				E67EBD611DE1439C00F612AB /* LibraryAPI.swift */,
+				E67EBD5F1DE13F0800F612AB /* EmojiLibrary.swift */,
 				E67C0F481DE0367300C22C3C /* Assets.xcassets */,
 				E67C0F4A1DE0367300C22C3C /* Info.plist */,
 			);
@@ -117,8 +162,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E67C0F511DE0367300C22C3C /* Build configuration list for PBXNativeTarget "Emotions" */;
 			buildPhases = (
+				EB31CC1D41DF60AB564F09A9 /* [CP] Check Pods Manifest.lock */,
 				E67C0F2F1DE0367300C22C3C /* Resources */,
 				E67C0F501DE0367300C22C3C /* Embed App Extensions */,
+				F984B4019B106E791F0F8A8A /* Frameworks */,
+				75A63E9861C130F629B052A0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,9 +182,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E67C0F4D1DE0367300C22C3C /* Build configuration list for PBXNativeTarget "MessagesExtension" */;
 			buildPhases = (
+				F18128BB449ECA2B1125C233 /* [CP] Check Pods Manifest.lock */,
 				E67C0F371DE0367300C22C3C /* Sources */,
 				E67C0F381DE0367300C22C3C /* Frameworks */,
 				E67C0F391DE0367300C22C3C /* Resources */,
+				DDDDA9E879A85105C14A1DA4 /* [CP] Embed Pods Frameworks */,
+				58034E3AD348D83D438734F0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,11 +253,89 @@
 			buildActionMask = 2147483647;
 			files = (
 				E67C0F491DE0367300C22C3C /* Assets.xcassets in Resources */,
-				E67C0F471DE0367300C22C3C /* MainInterface.storyboard in Resources */,
+				E67C0F571DE036D300C22C3C /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		58034E3AD348D83D438734F0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Emotions-MessagesExtension/Pods-Emotions-MessagesExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75A63E9861C130F629B052A0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Emotions/Pods-Emotions-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDDDA9E879A85105C14A1DA4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Emotions-MessagesExtension/Pods-Emotions-MessagesExtension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB31CC1D41DF60AB564F09A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F18128BB449ECA2B1125C233 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E67C0F371DE0367300C22C3C /* Sources */ = {
@@ -214,6 +343,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E67C0F441DE0367300C22C3C /* MessagesViewController.swift in Sources */,
+				E67EBD621DE1439C00F612AB /* LibraryAPI.swift in Sources */,
+				E67C0F591DE036F400C22C3C /* APIRequest.swift in Sources */,
+				E67EBD601DE13F0800F612AB /* EmojiLibrary.swift in Sources */,
+				E67C0F551DE0368500C22C3C /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,17 +359,6 @@
 			targetProxy = E67C0F3D1DE0367300C22C3C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		E67C0F451DE0367300C22C3C /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E67C0F461DE0367300C22C3C /* Base */,
-			);
-			name = MainInterface.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E67C0F4B1DE0367300C22C3C /* Debug */ = {
@@ -334,10 +456,12 @@
 		};
 		E67C0F4E1DE0367300C22C3C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79E12A7A7579252EEBE03DF4 /* Pods-Emotions-MessagesExtension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				DEVELOPMENT_TEAM = X3JF99A2D6;
 				INFOPLIST_FILE = MessagesExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bevimobile.Emotions.MessagesExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -348,10 +472,12 @@
 		};
 		E67C0F4F1DE0367300C22C3C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFDB3E0C82C4DE06BB47C36C /* Pods-Emotions-MessagesExtension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				DEVELOPMENT_TEAM = X3JF99A2D6;
 				INFOPLIST_FILE = MessagesExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bevimobile.Emotions.MessagesExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -362,11 +488,17 @@
 		};
 		E67C0F521DE0367300C22C3C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E15BBFBBD4B94BD7434D747 /* Pods-Emotions.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X3JF99A2D6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/SVProgressHUD",
+				);
 				INFOPLIST_FILE = Emotions/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bevimobile.Emotions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -375,11 +507,17 @@
 		};
 		E67C0F531DE0367300C22C3C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2893E16A839045D6A2BEEF73 /* Pods-Emotions.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X3JF99A2D6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/SVProgressHUD",
+				);
 				INFOPLIST_FILE = Emotions/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bevimobile.Emotions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -405,6 +543,7 @@
 				E67C0F4F1DE0367300C22C3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E67C0F511DE0367300C22C3C /* Build configuration list for PBXNativeTarget "Emotions" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +552,7 @@
 				E67C0F531DE0367300C22C3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

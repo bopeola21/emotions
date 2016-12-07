@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E7C7F7D0284E2F6DE7D4B5B2B4A2135 /* Pods-Emotions-MessagesExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0448429654AE4C1E831730AD9A414932 /* Pods-Emotions-MessagesExtension-dummy.m */; };
+		30D78BA9207520B69105150355F53587 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		36B1416B9FCBB93FA6E1B6C9E4B88D01 /* Pods-Emotions-MessagesExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C955410EF6AB09D71C9AEC4DBCF044A /* Pods-Emotions-MessagesExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D861550CB8AAC3703ED78ADB8E7CB00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		A9E9ED9470384CFFB0AF8876842825F1 /* Pods-Emotions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C0C5273E90AA15E7350DEC25BC4CB7 /* Pods-Emotions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C394924B7B3832F6FE2127FCF26AB105 /* Pods-Emotions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4FCC9F0B6541F52DC648BDE0502A0B /* Pods-Emotions-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0448429654AE4C1E831730AD9A414932 /* Pods-Emotions-MessagesExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Emotions-MessagesExtension-dummy.m"; sourceTree = "<group>"; };
+		0BBA06D28C6FCBFCAD80F01AD6468492 /* Pods-Emotions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Emotions.modulemap"; sourceTree = "<group>"; };
+		11C0C5273E90AA15E7350DEC25BC4CB7 /* Pods-Emotions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Emotions-umbrella.h"; sourceTree = "<group>"; };
+		1771527C8BF0A994A2727715ADC64B07 /* Pods-Emotions-MessagesExtension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Emotions-MessagesExtension-frameworks.sh"; sourceTree = "<group>"; };
+		18D34AEFB84E53FE8E9D5F882456980C /* Pods-Emotions-MessagesExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Emotions-MessagesExtension.release.xcconfig"; sourceTree = "<group>"; };
+		1C9852BA48CFCC1840D40F1E1E42C8C1 /* Pods-Emotions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Emotions.debug.xcconfig"; sourceTree = "<group>"; };
+		27834C54C0E053284459695A198CAAD6 /* Pods-Emotions-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Emotions-resources.sh"; sourceTree = "<group>"; };
+		2E4FCC9F0B6541F52DC648BDE0502A0B /* Pods-Emotions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Emotions-dummy.m"; sourceTree = "<group>"; };
+		306C10154A4A05979B2AAEE2716B3443 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C955410EF6AB09D71C9AEC4DBCF044A /* Pods-Emotions-MessagesExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Emotions-MessagesExtension-umbrella.h"; sourceTree = "<group>"; };
+		7D99689B0C4115E7B03B2800FCE83AA9 /* Pods-Emotions-MessagesExtension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Emotions-MessagesExtension-acknowledgements.plist"; sourceTree = "<group>"; };
+		8245F6F711E5CFE2F04D33EA1B88D50B /* Pods-Emotions-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Emotions-acknowledgements.markdown"; sourceTree = "<group>"; };
+		898D6413A6B6C58F7049811B1B057AAA /* Pods_Emotions_MessagesExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emotions_MessagesExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95765510004581BF2F4EB783D51018F8 /* Pods-Emotions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Emotions.release.xcconfig"; sourceTree = "<group>"; };
+		9BF214CD8CC8AAF9FCC2A5E985216C76 /* Pods-Emotions-MessagesExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Emotions-MessagesExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		A822D9AFB323A483BDBE896D1692D2E5 /* Pods-Emotions-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Emotions-acknowledgements.plist"; sourceTree = "<group>"; };
+		A8E3202D3FED44218A4CC448F2290DCA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B07397CB8D9C811925BA18620753D531 /* Pods-Emotions-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Emotions-frameworks.sh"; sourceTree = "<group>"; };
+		C357607D89E477ECB59E53DA29333EB7 /* Pods-Emotions-MessagesExtension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Emotions-MessagesExtension-resources.sh"; sourceTree = "<group>"; };
+		CD7F618D2CB07AB103D82F917DE70178 /* Pods-Emotions-MessagesExtension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Emotions-MessagesExtension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D748B6A172763C8C38117AB5ABEAA7CE /* Pods-Emotions-MessagesExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Emotions-MessagesExtension.modulemap"; sourceTree = "<group>"; };
+		E7CA7F98FEC40706CFFA2DEF839DB271 /* Pods_Emotions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emotions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13DFE4B1994E87A5DAA5CB3CD639F68E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D861550CB8AAC3703ED78ADB8E7CB00 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E036AD63A6D3391FECC4575DDDACCD76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30D78BA9207520B69105150355F53587 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06DE85E6080CA3B386ADB8BD6E8001E3 /* Pods-Emotions */ = {
+			isa = PBXGroup;
+			children = (
+				A8E3202D3FED44218A4CC448F2290DCA /* Info.plist */,
+				0BBA06D28C6FCBFCAD80F01AD6468492 /* Pods-Emotions.modulemap */,
+				8245F6F711E5CFE2F04D33EA1B88D50B /* Pods-Emotions-acknowledgements.markdown */,
+				A822D9AFB323A483BDBE896D1692D2E5 /* Pods-Emotions-acknowledgements.plist */,
+				2E4FCC9F0B6541F52DC648BDE0502A0B /* Pods-Emotions-dummy.m */,
+				B07397CB8D9C811925BA18620753D531 /* Pods-Emotions-frameworks.sh */,
+				27834C54C0E053284459695A198CAAD6 /* Pods-Emotions-resources.sh */,
+				11C0C5273E90AA15E7350DEC25BC4CB7 /* Pods-Emotions-umbrella.h */,
+				1C9852BA48CFCC1840D40F1E1E42C8C1 /* Pods-Emotions.debug.xcconfig */,
+				95765510004581BF2F4EB783D51018F8 /* Pods-Emotions.release.xcconfig */,
+			);
+			name = "Pods-Emotions";
+			path = "Target Support Files/Pods-Emotions";
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		46969CF99D6E8D194EF27F83BBC57477 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7CA7F98FEC40706CFFA2DEF839DB271 /* Pods_Emotions.framework */,
+				898D6413A6B6C58F7049811B1B057AAA /* Pods_Emotions_MessagesExtension.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49CED2CB81774696472C74DD62B50B07 /* Pods-Emotions-MessagesExtension */ = {
+			isa = PBXGroup;
+			children = (
+				306C10154A4A05979B2AAEE2716B3443 /* Info.plist */,
+				D748B6A172763C8C38117AB5ABEAA7CE /* Pods-Emotions-MessagesExtension.modulemap */,
+				CD7F618D2CB07AB103D82F917DE70178 /* Pods-Emotions-MessagesExtension-acknowledgements.markdown */,
+				7D99689B0C4115E7B03B2800FCE83AA9 /* Pods-Emotions-MessagesExtension-acknowledgements.plist */,
+				0448429654AE4C1E831730AD9A414932 /* Pods-Emotions-MessagesExtension-dummy.m */,
+				1771527C8BF0A994A2727715ADC64B07 /* Pods-Emotions-MessagesExtension-frameworks.sh */,
+				C357607D89E477ECB59E53DA29333EB7 /* Pods-Emotions-MessagesExtension-resources.sh */,
+				6C955410EF6AB09D71C9AEC4DBCF044A /* Pods-Emotions-MessagesExtension-umbrella.h */,
+				9BF214CD8CC8AAF9FCC2A5E985216C76 /* Pods-Emotions-MessagesExtension.debug.xcconfig */,
+				18D34AEFB84E53FE8E9D5F882456980C /* Pods-Emotions-MessagesExtension.release.xcconfig */,
+			);
+			name = "Pods-Emotions-MessagesExtension";
+			path = "Target Support Files/Pods-Emotions-MessagesExtension";
+			sourceTree = "<group>";
+		};
+		502D45EBF1E9D64ACA5B5EAA9E2FD118 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				06DE85E6080CA3B386ADB8BD6E8001E3 /* Pods-Emotions */,
+				49CED2CB81774696472C74DD62B50B07 /* Pods-Emotions-MessagesExtension */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				46969CF99D6E8D194EF27F83BBC57477 /* Products */,
+				502D45EBF1E9D64ACA5B5EAA9E2FD118 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		863522DD787C427C3977894B5D576DE5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36B1416B9FCBB93FA6E1B6C9E4B88D01 /* Pods-Emotions-MessagesExtension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D547E743E476C5F3309FF4F93C94ABC9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9E9ED9470384CFFB0AF8876842825F1 /* Pods-Emotions-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3A0E4FE80595AB225A9B1D6F552A7665 /* Pods-Emotions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 464071C8DEADC3BCA12B9BB161FFA329 /* Build configuration list for PBXNativeTarget "Pods-Emotions" */;
+			buildPhases = (
+				C591569703B581E4693DABF992885357 /* Sources */,
+				E036AD63A6D3391FECC4575DDDACCD76 /* Frameworks */,
+				D547E743E476C5F3309FF4F93C94ABC9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Emotions";
+			productName = "Pods-Emotions";
+			productReference = E7CA7F98FEC40706CFFA2DEF839DB271 /* Pods_Emotions.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CED4976FB990328CCDF1D9F7526E0589 /* Pods-Emotions-MessagesExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31D8C627E1E8B8067A4FFD78A141EA77 /* Build configuration list for PBXNativeTarget "Pods-Emotions-MessagesExtension" */;
+			buildPhases = (
+				5FC7441057ABE5233051C633CC6C1B8F /* Sources */,
+				13DFE4B1994E87A5DAA5CB3CD639F68E /* Frameworks */,
+				863522DD787C427C3977894B5D576DE5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Emotions-MessagesExtension";
+			productName = "Pods-Emotions-MessagesExtension";
+			productReference = 898D6413A6B6C58F7049811B1B057AAA /* Pods_Emotions_MessagesExtension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 46969CF99D6E8D194EF27F83BBC57477 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A0E4FE80595AB225A9B1D6F552A7665 /* Pods-Emotions */,
+				CED4976FB990328CCDF1D9F7526E0589 /* Pods-Emotions-MessagesExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5FC7441057ABE5233051C633CC6C1B8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E7C7F7D0284E2F6DE7D4B5B2B4A2135 /* Pods-Emotions-MessagesExtension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C591569703B581E4693DABF992885357 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C394924B7B3832F6FE2127FCF26AB105 /* Pods-Emotions-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		07A38803E3C12F0EFA1800A5FB4C5E64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BF214CD8CC8AAF9FCC2A5E985216C76 /* Pods-Emotions-MessagesExtension.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Emotions-MessagesExtension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Emotions-MessagesExtension/Pods-Emotions-MessagesExtension.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Emotions_MessagesExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		12914D756594D15C6F2CA12FE5F89F1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		17C43CC8FDF069A386DE260B54E23C4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95765510004581BF2F4EB783D51018F8 /* Pods-Emotions.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Emotions/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Emotions/Pods-Emotions.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Emotions;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		36E7D09E55F4E6526426414587C61437 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18D34AEFB84E53FE8E9D5F882456980C /* Pods-Emotions-MessagesExtension.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Emotions-MessagesExtension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Emotions-MessagesExtension/Pods-Emotions-MessagesExtension.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Emotions_MessagesExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5D7834A2151533AFD324FDE7D4B8EF40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C9852BA48CFCC1840D40F1E1E42C8C1 /* Pods-Emotions.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Emotions/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Emotions/Pods-Emotions.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Emotions;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E72E7977875C2D251FC62736BBDDC389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12914D756594D15C6F2CA12FE5F89F1B /* Debug */,
+				E72E7977875C2D251FC62736BBDDC389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31D8C627E1E8B8067A4FFD78A141EA77 /* Build configuration list for PBXNativeTarget "Pods-Emotions-MessagesExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07A38803E3C12F0EFA1800A5FB4C5E64 /* Debug */,
+				36E7D09E55F4E6526426414587C61437 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		464071C8DEADC3BCA12B9BB161FFA329 /* Build configuration list for PBXNativeTarget "Pods-Emotions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D7834A2151533AFD324FDE7D4B8EF40 /* Debug */,
+				17C43CC8FDF069A386DE260B54E23C4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

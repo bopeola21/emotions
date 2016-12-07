@@ -8,83 +8,55 @@
 
 import UIKit
 
-let endpoint = "https://api.projectoxford.ai/emotion/v1.0/recognize"
+let endpointEmotions = "https://api.projectoxford.ai/emotion/v1.0/recognize"
+let endpointImageRec = "https://api.projectoxford.ai/vision/v1.0/analyze?"
+let visionsKey = "5224921031bf4088b1f32358935ac05e"
+let emotionKey = "da0ce993b6464b168bcc0241b7b60091"
+
+enum CameraType {
+    case Front
+    case Rear
+}
 
 class APIRequest: NSObject {
     
-    class func fetchEmotion(image: UIImage) {
+    class func fetchImageType(image: UIImage, completion:@escaping (_ text: [String]?)->()) {
+        
+        var url: URL?
+        var key = ""
+        
+        if LibraryAPI.sharedInstance().cameraType == .Front {
+            url = URL(string: endpointEmotions)
+            key = emotionKey
+        } else {
+            let visualFeatures = "visualFeatures=Categories,Tags,Faces"
+            url = URL(string: endpointImageRec + visualFeatures)
+            key = visionsKey
+        }
 
+        
         // Base64 encode the image and create the request
         let imageBase64 = APIRequest.base64EncodeImage(image)
         // Create our request URL
         
-        var url = URL(string: endpoint)
         var request = URLRequest(url: url!)
         request.httpMethod = "POST"
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.addValue("da0ce993b6464b168bcc0241b7b60091", forHTTPHeaderField: "Ocp-Apim-Subscription-Key")
-        
-//        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-//        request.addValue(Bundle.main.bundleIdentifier ?? "", forHTTPHeaderField: "X-Ios-Bundle-Identifier")
-        
-        // Build our API request
-        let jsonRequest = [
-            "requests": [
-                "image": [
-                    "content": imageBase64
-                ],
-                "features": [
-                    [
-                        "type": "LABEL_DETECTION",
-                        "maxResults": 10
-                    ],
-                    [
-                        "type": "FACE_DETECTION",
-                        "maxResults": 10
-                    ]
-                ]
-            ]
-        ]
-        
-        let dict = ["url" : "http://xdesktopwallpapers.com/wp-content/uploads/2011/08/Aarti-Chhabria-Smiling-Face-Cute-Eyes.jpg"]
-        
-//        var requestData = NSData()
-//        do {
-//            requestData = try JSONSerialization.data(withJSONObject: dict, options: JSONSerialization.WritingOptions(rawValue: 0)) as NSData
-//            
-//        } catch {
-//           print("error")
-//        }
-//        let jsonString = NSString(data: requestData as Data, encoding: String.Encoding.utf8.rawValue)
-//        let postData = jsonString?.data(using: String.Encoding.ascii.rawValue, allowLossyConversion: true)
-//        
-//        
+        request.addValue("application/octet-stream", forHTTPHeaderField: "Content-Type")
+        request.addValue(key, forHTTPHeaderField: "Ocp-Apim-Subscription-Key")
 
-        let jsonObject = JSON(jsonDictionary: dict)
-        
-        // Serialize the JSON
-        guard let data = try? jsonObject.rawData() else {
-            return
-        }
-        
-        request.httpBody = data
+        request.httpBody = imageBase64
         
         // Run the request on a background thread
-        DispatchQueue.global().async { APIRequest.runRequestOnBackgroundThread(request) }
-        
-        
-        
-        
-//        let imageData = UIImagePNGRepresentation(image)! as Data
-//
-//
-//        
-//        let paramString = "http://xdesktopwallpapers.com/wp-content/uploads/2011/08/Aarti-Chhabria-Smiling-Face-Cute-Eyes.jpg"
+        DispatchQueue.global().async {
 
-            
+            APIRequest.runRequestOnBackgroundThread(request, completion: { (text: [String]?) in
+                completion(text)
+            })
+        
+        }
     }
-    
-    class func base64EncodeImage(_ image: UIImage) -> String {
+
+    class func base64EncodeImage(_ image: UIImage) -> Data {
         var imagedata = UIImagePNGRepresentation(image)
         
         // Resize the image if it exceeds the 2MB API limit
@@ -94,7 +66,7 @@ class APIRequest: NSObject {
             imagedata = APIRequest.resizeImage(newSize, image: image)
         }
         
-        return imagedata!.base64EncodedString(options: .endLineWithCarriageReturn)
+        return imagedata!
     }
     
     class func resizeImage(_ imageSize: CGSize, image: UIImage) -> Data {
@@ -106,7 +78,7 @@ class APIRequest: NSObject {
         return resizedImage!
     }
     
-    class func runRequestOnBackgroundThread(_ request: URLRequest) {
+    class func runRequestOnBackgroundThread(_ request: URLRequest, completion:@escaping (_ text: [String]?)->()) {
         // run the request
         let session = URLSession.shared
 
@@ -116,17 +88,53 @@ class APIRequest: NSObject {
                 return
             }
             
-            print(data)
-            print(response)
+            let text = APIRequest.analyzeResults(data: data)
             
-            let json = JSON(data: data)
-            let errorObj: JSON = json["error"]
-            print(json)
-            
-           // self.analyzeResults(data)
+            completion(text)
         }
         
         task.resume()
+    }
+    
+    class func analyzeResults(data: Data) -> [String]? {
+        let json = JSON(data: data)
+        var text: [String]?
+
+        if LibraryAPI.sharedInstance().cameraType == .Front {
+            let responses: JSON = json[0]
+
+            if let scores = responses["scores"].dictionaryObject {
+                var score = 0.0
+                
+                for (key,value) in scores {
+                    let val = value as! Double
+
+                    if val > score {
+                        score = val
+                        text = [key]
+                    }
+                }
+            }
+        } else {
+            if let responses = json["tags"].array {
+                text = [String]()
+                for objectArray in responses {
+                    if let objectDict = objectArray.dictionaryObject {
+
+                        if let object = objectDict["name"] as? String {
+
+                            text?.append(object)
+                        }
+                    }
+                }
+            }
+
+        }
+      //  print(json)
+        return text
+        
+       // let errorObj: JSON = json["error"]
+        
     }
 
 }
