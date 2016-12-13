@@ -137,19 +137,19 @@ class MessagesViewController: MSMessagesAppViewController, UIImagePickerControll
            // UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
             
            // APIRequest.fetchImageType(image: image!, camera: cameraType)
-            APIRequest.fetchImageType(image: image!, completion: { (text: [String]?) in
+            APIRequest.fetchImageType(image: image!, completion: { [weak self] (text: [String]?) in
                  DispatchQueue.main.async {
                     if let text = text {
                         for str in text {
                             let emoji = EmojiLibrary.getEmoji(text: str)
                             if let emoji = emoji {
-                                self.activeConversation?.insertText(emoji + str, completionHandler: nil)
+                                self?.activeConversation?.insertText(emoji + str, completionHandler: nil)
                             } else {
-                                self.activeConversation?.insertText(str, completionHandler: nil)
+                                self?.activeConversation?.insertText(str, completionHandler: nil)
                             }
                         }
                     }
-                    self.searchEnded()
+                    self?.searchEnded()
                 }
             })
         }
